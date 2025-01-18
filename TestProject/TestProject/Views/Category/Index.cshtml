@@ -1,0 +1,46 @@
+﻿@model IEnumerable<TestProject.Models.Category>
+
+@{
+    ViewData["Title"] = "Category List";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().price)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.price)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No categories available.</p>
+}
