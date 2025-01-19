@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GfuOe+wyCAc=",
+  "dgSpecHash": "/oTv/rit/BQ=",
   "success": true,
-  "projectFilePath": "D:\\TestProject\\TestProject\\TestProject.csproj",
+  "projectFilePath": "D:\\Test_Crud_AspDotNetCoreMvc\\TestProject\\TestProject\\TestProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\durjo\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\durjo\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

@@ -35,5 +35,33 @@ namespace TestProject.Controllers
             }
             return View();
         }
+
+        public IActionResult Delete(int? id)
+        {
+            if(id == null || id == 0)
+            {
+                return NotFound();
+            }
+            var obj = _db.Myproperties.Find(id);
+            if(obj == null)
+            {
+                return NotFound();
+            }
+            return View(obj);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            var obj = _db.Myproperties.Find(id);
+            if(obj  == null)
+            {
+                return NotFound();
+            }
+            _db.Myproperties.Remove(obj);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
