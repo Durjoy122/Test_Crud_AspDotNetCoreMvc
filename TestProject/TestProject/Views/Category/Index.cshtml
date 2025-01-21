@@ -31,6 +31,7 @@
                         @Html.DisplayFor(modelItem => item.price)
                     </td>
                     <td>
+                        <a href="@Url.Action("Edit", new { id = item.Id })" class="btn btn-primary btn-sm">Edit</a>
                         <a href="@Url.Action("Delete", new { id = item.Id })" class="btn btn-danger btn-sm">Delete</a>
                     </td>
                 </tr>

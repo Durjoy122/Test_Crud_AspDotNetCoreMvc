@@ -9,10 +9,12 @@ namespace TestProject.Controllers
     public class CategoryController : Controller
     {
         private readonly ApplicationDbContext _db;
+
         public CategoryController(ApplicationDbContext db)
         {
             _db = db;
         }
+
         public IActionResult Index()
         {
             List<Category> obj = _db.Myproperties.ToList();
@@ -34,6 +36,33 @@ namespace TestProject.Controllers
                 return RedirectToAction("Index");
             }
             return View();
+        }
+
+        public IActionResult Edit(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+            var obj = _db.Myproperties.Find(id);
+            if (obj == null)
+            {
+                return NotFound();
+            }
+            return View(obj);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(Category category)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.Myproperties.Update(category);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(category);
         }
 
         public IActionResult Delete(int? id)

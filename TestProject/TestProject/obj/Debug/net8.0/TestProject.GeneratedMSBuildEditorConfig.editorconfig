@@ -26,12 +26,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Test_Crud_AspDotNetCoreMvc\TestProject\TestProject
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Test_Crud_AspDotNetCoreMvc/TestProject/TestProject/Views/Account/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxsb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Test_Crud_AspDotNetCoreMvc/TestProject/TestProject/Views/Account/registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxyZWdpc3RyYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Test_Crud_AspDotNetCoreMvc/TestProject/TestProject/Views/Category/create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcY3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Test_Crud_AspDotNetCoreMvc/TestProject/TestProject/Views/Category/delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcZGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Test_Crud_AspDotNetCoreMvc/TestProject/TestProject/Views/Category/edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcZWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Test_Crud_AspDotNetCoreMvc/TestProject/TestProject/Views/Category/Index.cshtml]

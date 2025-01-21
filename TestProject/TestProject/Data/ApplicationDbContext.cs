@@ -14,5 +14,6 @@ namespace TestProject.Data
         // Myproperties is the table name
         // DbSet is used to create a table in the database
         // AplicationDbContext is the class that is used to create a database
+        public DbSet<Users> Users { get; set; }
     }
 }
