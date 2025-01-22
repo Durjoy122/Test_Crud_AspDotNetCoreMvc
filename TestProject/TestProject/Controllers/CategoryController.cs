@@ -84,13 +84,27 @@ namespace TestProject.Controllers
         public IActionResult DeleteConfirmed(int id)
         {
             var obj = _db.Myproperties.Find(id);
-            if(obj  == null)
+            if(obj == null)
             {
                 return NotFound();
             }
             _db.Myproperties.Remove(obj);
             _db.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        public IActionResult Topprice()
+        {
+            var groupedCategories = _db.Myproperties.GroupBy(c => c.Name)
+                .Select(g => new Category
+                {
+                    Name = g.Key,
+                    price = g.Sum(c => c.price)
+                })
+                .OrderByDescending(c => c.price)
+                .ToList();
+
+            return View(groupedCategories);
         }
     }
 }

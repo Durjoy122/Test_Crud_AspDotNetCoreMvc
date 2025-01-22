@@ -1,0 +1,25 @@
+﻿@model IEnumerable<TestProject.Models.Category>
+
+@{
+    ViewData["Title"] = "Sorted Categories";
+}
+
+<h2>Sorted Categories by Price</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var category in Model)
+        {
+            <tr>
+                <td>@category.Name</td>
+                <td>@category.price</td>
+            </tr>
+        }
+    </tbody>
+</table>
