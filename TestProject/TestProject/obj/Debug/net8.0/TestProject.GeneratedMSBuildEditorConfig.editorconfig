@@ -50,6 +50,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Test_Crud_AspDotNetCoreMvc/TestProject/TestProject/Views/Category/searchuser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcc2VhcmNodXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Test_Crud_AspDotNetCoreMvc/TestProject/TestProject/Views/Category/searchUserResults.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcc2VhcmNoVXNlclJlc3VsdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Test_Crud_AspDotNetCoreMvc/TestProject/TestProject/Views/Category/topprice.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcdG9wcHJpY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

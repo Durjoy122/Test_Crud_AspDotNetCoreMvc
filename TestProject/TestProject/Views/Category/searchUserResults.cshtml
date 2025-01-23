@@ -1,0 +1,32 @@
+﻿@model IEnumerable<TestProject.Models.Users>
+
+@{
+    ViewData["Title"] = "Search User Results";
+}
+
+<h2>Search User Results</h2>
+
+@if (Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.Username</td>
+                    <td>@user.Password</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No users found with the given username.</p>
+}

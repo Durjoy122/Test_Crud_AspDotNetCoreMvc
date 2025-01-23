@@ -106,5 +106,18 @@ namespace TestProject.Controllers
 
             return View(groupedCategories);
         }
+        public IActionResult SearchUser()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult SearchUser(string username)
+        {
+            var users = _db.Users
+                .Where(u => u.Username.Contains(username))
+                .ToList();
+
+            return View("searchUserResults", users);
+        }
     }
 }
